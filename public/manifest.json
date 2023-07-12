@@ -1,0 +1,25 @@
+{
+  "name": "Mangi.org website",
+  "short_name": "Mangi.org",
+  "description": "This is Mangi.org website. It is a website for the Mangi.org company.",
+  "icons": [
+    {
+      "src": "/favicon_192x192px.svg",
+      "sizes": "192x192",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/mangi_logo.svg",
+      "sizes": "512x512",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ],
+  "theme_color": "#ffffff",
+  "background_color": "#ffffff",
+  "display": "standalone",
+  "start_url": "/",
+  "scope": "/",
+  "orientation": "portrait-primary"
+}
