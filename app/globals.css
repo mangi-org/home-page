@@ -6,6 +6,8 @@
   --orange-color: #ff9d43;
   --purple-color: #5917af;
   --dark-color: #1c1c1c;
+
+  --purple-alpha-color: #5917afaa;
 }
 
 * {
@@ -14,7 +16,7 @@
 }
 
 body {
-  min-height: 100vh;
+  min-height: 100svh;
   font-family: 'Roboto', sans-serif;
   font-weight: 500;
 }
