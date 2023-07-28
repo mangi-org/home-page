@@ -4,6 +4,7 @@
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
+  position: absolute;
 }
 
 .navigate {
@@ -54,7 +55,12 @@
   .menu {
     display: none;
   }
-  .menu.active {
+
+  .logo {
+    position: absolute;
+  }
+
+  :has(.menu + .mobile input[type='checkbox']:checked) > .menu {
     display: flex;
     flex-direction: column;
     z-index: 9998;
@@ -76,8 +82,8 @@
     bottom: 3em;
     right: 3em;
   }
-  
-  .mobile input[type="checkbox"]{
+
+  .mobile input[type='checkbox'] {
     display: none;
   }
 
@@ -88,32 +94,38 @@
     align-items: center;
     width: 3em;
     height: 3em;
-    background-color: var(--purple-alpha-color);
+    background-color: var(--black-color);
     border-radius: 50%;
     cursor: pointer;
     transition: all 0.5s ease-in-out;
   }
 
-  .mobile label svg {
+  .mobile label span {
     position: absolute;
-    top: 0;
-    left: 0;
-    fill: var(--white-color);
+    width: 2em;
+    height: 4px;
+    background-color: var(--white-color);
+    border-radius: 4px;
     transition: all 0.5s ease-in-out;
   }
 
-  .mobile input[type='checkbox']:checked + label > svg {
-    opacity: 1;
+  .mobile input[type='checkbox'] + label span:nth-child(1) {
+    top: 30%;
+    left: 8px;
   }
-  
-  .mobile input[type='checkbox']:checked + label > svg + svg {
-    opacity: 0;
-  }
-
-  .mobile input[type='checkbox']:disabled + label > svg {
-    opacity: 0;
+  .mobile input[type='checkbox'] + label span:nth-child(2) {
+    top: 70%;
+    left: 8px;
   }
 
+  .mobile input[type='checkbox']:checked + label span:nth-child(1) {
+    top: 50%;
+    transform: rotate(-45deg);
+  }
+  .mobile input[type='checkbox']:checked + label span:nth-child(2) {
+    top: 50%;
+    transform: rotate(45deg);
+  }
 }
 
 @media screen and (min-width: 768px) and (max-width: 991px) {
