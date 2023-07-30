@@ -5,12 +5,12 @@ import Main from './Main'
 
 export default function Layout({ children }) {
     return (
-        <>
+        <div className='wrapper'>
             <Header />
             <Main>
                 {children}
             </Main>
             <Footer />
-        </>
+        </div>
     )
 }
