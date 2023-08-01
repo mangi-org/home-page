@@ -1,12 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&display=swap'); */
 
 :root {
   --white-color: #f1f1f1;
   --black-color: #333333;
   --orange-color: #ff9d43;
   --purple-color: #5917af;
-  --dark-color: #1c1c1c;
-
+  --dark-color: #000000;
+  --black-alpha-color: #333333aa;
   --purple-alpha-color: #5917afaa;
 }
 
@@ -22,11 +22,13 @@ body {
 }
 
 body.dark {
-  background-color: var(--black-color);
+  background-color: var(--dark-color);
   color: var(--white-color);
+  color-scheme: var(--dark-color);
 }
 
 body.light {
   background-color: var(--white-color);
   color: var(--black-color);
+  color-scheme: var(--white-color);
 }

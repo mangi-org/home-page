@@ -1,0 +1,22 @@
+.button {
+  background-color: var(--orange-color);
+  border: 1px solid var(--orange-color);
+  color: var(--black-color);
+  padding: 1.25rem 2rem;
+  border-radius: 0.75rem;
+  margin-bottom: 1rem;
+}
+
+a.button {
+  text-decoration: none;
+}
+
+.button:hover {
+  background-color: var(--black-color);
+  color: var(--orange-color);
+}
+
+.button:active {
+  background-color: var(--black-color);
+  color: var(--orange-color);
+}

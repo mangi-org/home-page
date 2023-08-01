@@ -1,0 +1,43 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-top: -15%;
+  gap: 5rem;
+  animation-name: fadeIn;
+  animation-duration: 1s;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    margin-top: 0;
+  }
+  100% {
+    opacity: 1;
+    margin-top: -15%;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .container {
+    margin: 0;
+    gap: 1rem;
+  }
+
+  .first_excemple_website_image > img {
+    height: auto;
+    max-width: 100%;
+  }
+
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+}

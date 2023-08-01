@@ -1,4 +1,4 @@
-import React from 'react'
+import { ScrollTop } from '@/components'
 
 export default function Footer() {
     return (

@@ -63,7 +63,7 @@
   :has(.menu + .mobile input[type='checkbox']:checked) > .menu {
     display: flex;
     flex-direction: column;
-    z-index: 9998;
+    z-index: 2;
     position: fixed;
     top: 0;
     left: 0;
@@ -79,8 +79,8 @@
     display: block;
     position: fixed;
     z-index: 9999;
-    bottom: 3em;
-    right: 3em;
+    bottom: 2em;
+    right: 2em;
   }
 
   .mobile input[type='checkbox'] {
@@ -92,9 +92,11 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 3em;
-    height: 3em;
-    background-color: var(--black-color);
+    width: 3.5em;
+    height: 3.5em;
+    backdrop-filter: blur(8px) saturate(180%);
+    -webkit-backdrop-filter: blur(8px) saturate(180%);
+    background-color: var(--black-alpha-color);
     border-radius: 50%;
     cursor: pointer;
     transition: all 0.5s ease-in-out;
@@ -107,24 +109,29 @@
     background-color: var(--white-color);
     border-radius: 4px;
     transition: all 0.5s ease-in-out;
+    left: 0.75rem
   }
 
   .mobile input[type='checkbox'] + label span:nth-child(1) {
     top: 30%;
-    left: 8px;
   }
   .mobile input[type='checkbox'] + label span:nth-child(2) {
+    top: 50%;
+  }
+  .mobile input[type='checkbox'] + label span:nth-child(3) {
     top: 70%;
-    left: 8px;
   }
 
   .mobile input[type='checkbox']:checked + label span:nth-child(1) {
     top: 50%;
     transform: rotate(-45deg);
   }
-  .mobile input[type='checkbox']:checked + label span:nth-child(2) {
+  .mobile input[type='checkbox']:checked + label span:nth-child(3) {
     top: 50%;
     transform: rotate(45deg);
+  }
+  .mobile input[type='checkbox']:checked + label span:nth-child(2) {
+    opacity: 0;
   }
 }
 

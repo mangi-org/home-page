@@ -1,7 +1,7 @@
-import React from 'react'
 import Link from 'next/link'
 import styles from './Header.module.css'
 import Image from 'next/image'
+import Logo from '@/assets/mangi_logo.svg'
 
 const menu_urls = [
     {
@@ -36,7 +36,7 @@ export default function Header() {
         <header className={styles.header}>
             <nav className={styles.navigate}>
                 <Link href='/' className={styles.logo}>
-                    <Image src="/mangi_logo.svg" alt="logo" width={100} height={40} priority />
+                    <Image src={Logo} alt="logo" width={100} height={40} priority />
                 </Link>
                 <menu className={styles.menu}>
                     {menu_urls.map((item, index) => (
@@ -50,10 +50,10 @@ export default function Header() {
                     <label htmlFor="menuBtnOpen">
                         <span></span>
                         <span></span>
+                        <span></span>
                     </label>
                 </div>
                 <div className={styles.settings}>
-
                 </div>
             </nav>
         </header>

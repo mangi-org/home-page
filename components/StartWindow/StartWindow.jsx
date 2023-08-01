@@ -1,6 +1,6 @@
-import styles from './StartWindow.module.css';
-import backgroundImage from '@/assets/background_start_window_desctop.png';
 import Image from 'next/image';
+import backgroundImage from '@/assets/background_start_window_desctop.svg';
+import styles from './StartWindow.module.css';
 
 function StartWindow() {
   return (
