@@ -1,23 +1,24 @@
 'use client'
 import { useEffect } from 'react'
 
+/**
+ * Generates a function comment for the given function body.
+ *
+ * @return {void} - No return value.
+ */
 export default function FontsComponent() {
     useEffect(() => {
-        window.onload = () => {
-            const link = document.createElement('link');
-            link.href = 'https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&display=swap';
-            link.rel = 'stylesheet';
-            link.onload = () => {
-                // Шрифты успешно загружены
-            };
-            link.onerror = () => {
-                // Обработка ошибки загрузки шрифтов, если не удалось загрузить
-            };
-            document.head.appendChild(link);
-        }
+        const link = document.createElement('link');
+        link.href = 'https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&display=swap';
+        link.rel = 'stylesheet';
+        link.onload = () => {
+            // Fonts successfully loaded
+        };
+        link.onerror = () => {
+            // Handle font loading error if failed to load
+        };
+        document.head.appendChild(link);
     }, []);
 
-    return (
-        <div style={{ display: 'none' }}>Fonst Loader</div>
-    )
+    return null;
 }

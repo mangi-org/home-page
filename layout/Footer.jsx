@@ -1,5 +1,8 @@
-import { ScrollTop } from '@/components'
-
+/**
+ * Renders the footer component.
+ *
+ * @return {JSX.Element} The rendered footer component.
+ */
 export default function Footer() {
     return (
         <footer>

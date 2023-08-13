@@ -4,6 +4,11 @@ import FirstImage from '@/assets/excemple_website.png'
 import { ButtonContacts } from "../Button"
 
 
+/**
+ * Renders the content of the first example website.
+ *
+ * @return {JSX.Element} The rendered content of the first example website.
+ */
 function FirstExcempleWebsite() {
     return (
         <div className={styles.container}>

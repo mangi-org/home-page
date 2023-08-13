@@ -30,6 +30,11 @@ const menu_urls = [
     }
 ]
 
+/**
+ * Renders the header component.
+ *
+ * @return {JSX.Element} The header component.
+ */
 export default function Header() {
 
     return (

@@ -4,11 +4,15 @@ import styles from './ScrollTop.module.css'
 import Arrow from '@/assets/ArrowUp.svg'
 import Image from 'next/image';
 
+/**
+ * ScrollTop component that displays a button to scroll to the top of the page when clicked.
+ *
+ * @return {JSX.Element} The ScrollTop component.
+ */
 export default function ScrollTop() {
     const [showScroll, setShowScroll] = useState(false);
 
-    const checkScrollTop = () => {
-
+    const checkScrollTop = () => {       
         if (window.pageYOffset > 0) {
             setShowScroll(true);
         } else {

@@ -2,6 +2,11 @@ import Image from 'next/image';
 import backgroundImage from '@/assets/background_start_window_desctop.svg';
 import styles from './StartWindow.module.css';
 
+/**
+ * Renders the start window component.
+ *
+ * @returns {JSX.Element} The rendered start window component.
+ */
 function StartWindow() {
   return (
     <div className={styles.startWindow}>

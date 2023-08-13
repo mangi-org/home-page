@@ -15,6 +15,12 @@ const robots = Roboto({
   display: 'swap',
 });
 
+/**
+ * Renders the root layout for the application.
+ *
+ * @param {Object} children - The children components to be rendered within the layout.
+ * @return {JSX.Element} The JSX element representing the root layout.
+ */
 export default function RootLayout({ children }) {
   return (
     <html lang='ru'>
