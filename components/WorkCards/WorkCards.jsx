@@ -1,43 +1,48 @@
 import { CardWork } from "../Cards"
 import { Hydrogen } from "../Hydrogen"
 import styles from "./WorkCards.module.css"
-import WebSiteBackground from '@/assets/задняя часть веб-сайты.png'
+import CRMBackground from '@/assets/crm.png'
+import BotsBackground from '@/assets/bots.png'
+import MobileBackground from '@/assets/mobile.png'
+import LandingBackground from '@/assets/landing.png'
+import ShopBackground from '@/assets/shop.png'
+import SeoBackground from '@/assets/seo.png'
 
 const itemsWorkCards = [
     {
-        title: 'Веб-сайты презентующие компанию',
+        title: 'Корпоративные порталы (CRM системы)',
         link: '#',
-        backgroundImage: WebSiteBackground,
+        backgroundImage: CRMBackground,
         backgroundImageAlt: 'Картинка для работ веб-сайтов'
     },
     {
         title: 'Веб-сайты презентующие компанию',
         link: '#',
-        backgroundImage: WebSiteBackground,
+        backgroundImage: LandingBackground,
         backgroundImageAlt: 'Картинка для работ веб-сайтов'
     },
     {
-        title: 'Веб-сайты презентующие компанию',
+        title: 'Интернет магазины',
         link: '#',
-        backgroundImage: WebSiteBackground,
+        backgroundImage: ShopBackground,
         backgroundImageAlt: 'Картинка для работ веб-сайтов'
     },
     {
-        title: 'Веб-сайты презентующие компанию',
+        title: 'Мобильные приложения',
         link: '#',
-        backgroundImage: WebSiteBackground,
+        backgroundImage: MobileBackground,
         backgroundImageAlt: 'Картинка для работ веб-сайтов'
     },
     {
-        title: 'Веб-сайты презентующие компанию',
+        title: 'Продвижения сайта',
         link: '#',
-        backgroundImage: WebSiteBackground,
+        backgroundImage: SeoBackground,
         backgroundImageAlt: 'Картинка для работ веб-сайтов'
     },
     {
-        title: 'Веб-сайты презентующие компанию',
+        title: 'Боты в мессенджерах',
         link: '#',
-        backgroundImage: WebSiteBackground,
+        backgroundImage: BotsBackground,
         backgroundImageAlt: 'Картинка для работ веб-сайтов'
     }
 ]

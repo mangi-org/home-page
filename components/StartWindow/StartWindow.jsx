@@ -2,7 +2,6 @@ import Image from 'next/image';
 import backgroundImage from '@/assets/philip-oroni-v0PnusRa6aM-unsplash 1.svg';
 import styles from './StartWindow.module.css';
 import { ScrollBottom } from '../ScrollBottom';
-
 /**
  * Renders the start window component.
  *

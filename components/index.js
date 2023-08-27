@@ -8,6 +8,7 @@ import { Creativity } from './Creativity';
 import { WorkCards } from './WorkCards';
 import { CardWork } from './Cards';
 import { Hydrogen } from './Hydrogen';
+import { Support } from './Support';
 
 export {
   StartWindow,
@@ -22,4 +23,5 @@ export {
   WorkCards,
   CardWork,
   Hydrogen,
+  Support,
 };

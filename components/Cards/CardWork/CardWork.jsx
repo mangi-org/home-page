@@ -13,6 +13,13 @@ import Image from 'next/image';
  * @return {JSX.Element} The rendered card component.
  */
 function CardWork({ title, link, backgroundImage, backgroundImageAlt }) {
+
+    let checkLink = true;
+
+    if (link === '#' || link === '') {
+        checkLink = false;
+    }
+
     return (
         <div className={styles.card}>
             <div className={styles.bacground}>
@@ -21,7 +28,7 @@ function CardWork({ title, link, backgroundImage, backgroundImageAlt }) {
             </div>
             <div className={styles.content}>
                 <h3 className={styles.title}>{title}</h3>
-                <Link href={link}>Примеры работ</Link>
+                {checkLink && <Link href={link}>Примеры работ</Link>}
             </div>
         </div>
     );
