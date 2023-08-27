@@ -15,10 +15,15 @@
   margin: 0;
 }
 
+*, html {
+  scroll-behavior: smooth;
+}
+
 body {
   min-height: 100svh;
   font-family: 'Roboto', sans-serif;
   font-weight: 500;
+  scroll-behavior: smooth;
 }
 
 body.dark {

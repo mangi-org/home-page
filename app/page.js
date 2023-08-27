@@ -1,4 +1,4 @@
-import { StartWindow, FirstExcempleWebsite } from '@/components';
+import { StartWindow, FirstExcempleWebsite, Creativity, WorkCards } from '@/components';
 
 
 export const metadata = {
@@ -16,6 +16,8 @@ export default function Home() {
     <>
       <StartWindow />
       <FirstExcempleWebsite />
+      <Creativity />
+      <WorkCards />
     </>
   );
 }

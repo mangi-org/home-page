@@ -12,7 +12,12 @@ import Image from 'next/image';
 export default function ScrollTop() {
     const [showScroll, setShowScroll] = useState(false);
 
-    const checkScrollTop = () => {       
+    /**
+     * Check if the scroll position is at the top of the page.
+     *
+     * @return {void} No return value.
+     */
+    const checkScrollTop = () => {
         if (window.pageYOffset > 0) {
             setShowScroll(true);
         } else {
@@ -20,6 +25,11 @@ export default function ScrollTop() {
         }
     };
 
+    /**
+     * Scrolls the window to the top of the page smoothly.
+     *
+     * @return {undefined} No return value.
+     */
     const scrollTop = () => {
         window.scrollTo({ top: 0, behavior: 'smooth' });
     };

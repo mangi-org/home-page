@@ -1,6 +1,7 @@
 import Image from 'next/image';
-import backgroundImage from '@/assets/background_start_window_desctop.svg';
+import backgroundImage from '@/assets/philip-oroni-v0PnusRa6aM-unsplash 1.svg';
 import styles from './StartWindow.module.css';
+import { ScrollBottom } from '../ScrollBottom';
 
 /**
  * Renders the start window component.
@@ -9,7 +10,7 @@ import styles from './StartWindow.module.css';
  */
 function StartWindow() {
   return (
-    <div className={styles.startWindow}>
+    <section className={styles.startWindow}>
       <Image
         className={styles.backgroundImage}
         src={backgroundImage}
@@ -18,7 +19,8 @@ function StartWindow() {
       <div className={styles.container}>
         <h1>Почему Вам нужен веб-сайт — чтобы завоевать доверие к бренду</h1>
       </div>
-    </div>
+      <ScrollBottom />
+    </section>
   );
 }
 

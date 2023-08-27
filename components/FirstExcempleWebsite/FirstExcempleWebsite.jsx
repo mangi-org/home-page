@@ -11,12 +11,12 @@ import { ButtonContacts } from "../Button"
  */
 function FirstExcempleWebsite() {
     return (
-        <div className={styles.container}>
+        <section className={styles.container}>
             <div className={styles.first_excemple_website_image}>
-                <Image src={FirstImage} alt="first_excemple_website_image" />
+                <Image src={FirstImage} alt="first excemple website image" />
             </div>
             <ButtonContacts>Начать сотрудничество</ButtonContacts>
-        </div>
+        </section>
     )
 }
 

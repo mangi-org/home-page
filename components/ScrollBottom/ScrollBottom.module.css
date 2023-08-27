@@ -1,0 +1,74 @@
+.scroll {
+  position: absolute;
+  bottom: 2rem;
+  z-index: 1;
+}
+
+.group {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.group img:nth-child(1) {
+  height: 4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.group img:nth-child(2) {
+  height: 4rem;
+  position: absolute;
+  top: 1.75rem;
+  left: 0.55rem;
+  animation: 2s bounce infinite ease-in-out;
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(-3rem);
+    opacity: 0.25;
+  }
+  50% {
+    transform: translateY(-1.5rem);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-1rem);
+    opacity: 0.25;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .group img:nth-child(1) {
+    height: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .group img:nth-child(2) {
+    height: 0.75rem;
+    position: absolute;
+    top: 1.75rem;
+    left: 0.55rem;
+  }
+
+  @keyframes bounce {
+    0% {
+      transform: translateY(-1.5rem);
+      opacity: 0.25;
+    }
+    50% {
+      transform: translateY(-0.5rem);
+      opacity: 1;
+    }
+    100% {
+      transform: translateY(0rem);
+      opacity: 0.25;
+    }
+  }
+}

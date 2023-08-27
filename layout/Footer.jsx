@@ -1,3 +1,5 @@
+import { SmootchEffect } from '@/components'
+import styles from './Footer.module.css'
 /**
  * Renders the footer component.
  *
@@ -5,12 +7,10 @@
  */
 export default function Footer() {
     return (
-        <footer>
-            <section>
-                <p>
-                    © {new Date().getFullYear()} Все права защищены
-                </p>
-            </section>
+        <footer className={styles.footer}>
+            <p>
+                © {new Date().getFullYear()} Все права защищены
+            </p>
         </footer>
     )
 }

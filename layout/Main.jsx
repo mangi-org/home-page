@@ -1,11 +1,9 @@
-import PropTypes from 'prop-types';
-
 /**
- * Renders the main component with the provided children.
+ * Render the main component with the provided children.
  *
- * @param {Object} props - The properties passed to the component.
+ * @param {Object} props - The properties object.
  * @param {ReactNode} props.children - The content to be rendered inside the main component.
- * @return {ReactNode} - The rendered main component.
+ * @return {ReactNode} The main component with the provided children.
  */
 function Main({ children }) {
     return (
@@ -14,9 +12,5 @@ function Main({ children }) {
         </main>
     );
 }
-
-Main.propTypes = {
-    children: PropTypes.object.isRequired,
-};
 
 export default Main;

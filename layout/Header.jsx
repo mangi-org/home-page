@@ -3,7 +3,7 @@ import styles from './Header.module.css'
 import Image from 'next/image'
 import Logo from '@/assets/mangi_logo.svg'
 
-const menu_urls = [
+const menuUrls = [
     {
         name: 'Работы',
         url: '/#work'
@@ -44,7 +44,7 @@ export default function Header() {
                     <Image src={Logo} alt="logo" width={100} height={40} priority />
                 </Link>
                 <menu className={styles.menu}>
-                    {menu_urls.map((item, index) => (
+                    {menuUrls.map((item, index) => (
                         <li key={index}>
                             <Link href={item.url}>{item.name}</Link>
                         </li>

@@ -5,6 +5,7 @@
   padding: 1.25rem 2rem;
   border-radius: 0.75rem;
   margin-bottom: 1rem;
+  transition: all 0.3s ease-in-out;
 }
 
 a.button {

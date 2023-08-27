@@ -1,0 +1,19 @@
+.title {
+    text-align: center;
+  font-weight: 700;
+  font-size: 5.375rem;
+}
+
+.works {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  gap: 1rem;
+  justify-items: center;
+}
+
+@media screen and (max-width: 767px) {
+  .works {
+    grid-template-columns: 1fr 1fr;
+  }
+}
