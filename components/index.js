@@ -9,6 +9,14 @@ import { WorkCards } from './WorkCards';
 import { CardWork } from './Cards';
 import { Hydrogen } from './Hydrogen';
 import { Support } from './Support';
+import {
+  VKIcon,
+  TelegrammIcon,
+  WhatsAppIcon,
+  MailIcon,
+  PhoneIcon,
+  QuestionIcon,
+} from './Icons';
 
 export {
   StartWindow,
@@ -24,4 +32,10 @@ export {
   CardWork,
   Hydrogen,
   Support,
+  VKIcon,
+  TelegrammIcon,
+  WhatsAppIcon,
+  MailIcon,
+  PhoneIcon,
+  QuestionIcon,
 };

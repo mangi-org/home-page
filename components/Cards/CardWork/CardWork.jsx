@@ -16,9 +16,9 @@ function CardWork({ title, link, backgroundImage, backgroundImageAlt }) {
 
     let checkLink = true;
 
-    if (link === '#' || link === '') {
-        checkLink = false;
-    }
+    // if (link === '#' || link === '') {
+    //     checkLink = false;
+    // }
 
     return (
         <div className={styles.card}>
