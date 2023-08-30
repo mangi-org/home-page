@@ -9,6 +9,8 @@ import { WorkCards } from './WorkCards';
 import { CardWork } from './Cards';
 import { Hydrogen } from './Hydrogen';
 import { Support } from './Support';
+import { AboutUs } from './AboutUs';
+import { GradientSpan } from './GradientSpan';
 import {
   VKIcon,
   TelegrammIcon,
@@ -38,4 +40,6 @@ export {
   MailIcon,
   PhoneIcon,
   QuestionIcon,
+  AboutUs,
+  GradientSpan,
 };

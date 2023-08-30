@@ -4,6 +4,7 @@ import { VKIcon, TelegrammIcon, WhatsAppIcon, MailIcon, PhoneIcon, QuestionIcon 
 import { SupportLayerIcon } from "./SupportLayerIcon"
 import styles from "./Support.module.css"
 import BackgroundImage from "@/assets/unLinerOrangeVector.svg"
+import { Paragraph } from "../Paragraph"
 
 const text = "Можете связаться с нами и одновременно опробовав бота"
 
@@ -15,7 +16,7 @@ function Support() {
             </div>
             <div className={styles.content}>
                 <Hydrogen text="Как связаться?" />
-                <p>{text}</p>
+                <Paragraph>{text}</Paragraph>
                 <div className={styles.groupIconBottom}>
                     <i className={styles.iconBottom}><VKIcon /></i>
                     <i className={styles.iconBottom}><TelegrammIcon /></i>

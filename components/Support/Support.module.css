@@ -46,12 +46,6 @@
   }
 }
 
-.content p {
-  text-align: center;
-  font-weight: 500;
-  font-size: 1.5rem;
-}
-
 .groupIconBottom {
   display: flex;
   flex-direction: row;
@@ -166,10 +160,6 @@
   .content {
     padding: 1.5rem 0.25rem;
     margin: 0 0.5rem;
-  }
-
-  .content p {
-    font-size: 1rem;
   }
 
   .groupIconBottom {

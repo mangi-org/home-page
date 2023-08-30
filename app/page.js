@@ -1,5 +1,11 @@
-import { StartWindow, FirstExcempleWebsite, Creativity, WorkCards, Support } from '@/components';
-
+import {
+  StartWindow,
+  FirstExcempleWebsite,
+  Creativity,
+  WorkCards,
+  Support,
+  AboutUs,
+} from '@/components';
 
 export const metadata = {
   title: 'Home',
@@ -19,6 +25,7 @@ export default function Home() {
       <Creativity />
       <WorkCards />
       <Support />
+      <AboutUs />
     </>
   );
 }
