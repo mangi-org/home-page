@@ -30,7 +30,7 @@
   animation-delay: 1s;
   margin: 0 auto;
   padding: 0.5rem 5rem;
-  backdrop-filter: blur(2px);
+  backdrop-filter: blur(0.5rem);
 }
 
 @keyframes fadeIn {

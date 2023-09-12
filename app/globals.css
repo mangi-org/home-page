@@ -6,9 +6,18 @@
   --orange-color: #ff9d43;
   --purple-color: #5917af;
   --dark-color: #000000;
+  
   --black-alpha-color: #333333aa;
   --black-glassa-color: #33333333;
+  
+  --white-alpha-color: #f1f1f1aa;
+  --white-glassa-color: #f1f1f133;
+  
   --purple-alpha-color: #5917afaa;
+  --purple-glassa-color: #5917af33;
+
+  --orange-alpha-color: #ff9d43aa;
+  --orange-glassa-color: #ff9d43aa;
 }
 
 * {

@@ -11,6 +11,7 @@ import { Hydrogen } from './Hydrogen';
 import { Support } from './Support';
 import { AboutUs } from './AboutUs';
 import { GradientSpan } from './GradientSpan';
+import Paralax from './Paralax';
 import {
   VKIcon,
   TelegrammIcon,
@@ -42,4 +43,5 @@ export {
   QuestionIcon,
   AboutUs,
   GradientSpan,
+  Paralax,
 };
