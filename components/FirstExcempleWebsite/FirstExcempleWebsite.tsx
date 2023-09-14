@@ -11,10 +11,8 @@ import { ButtonContacts } from "../Button"
  */
 function FirstExcempleWebsite() {
     return (
-        <section className={styles.container}>
-            <div className={styles.first_excemple_website_image}>
-                <Image src={FirstImage} alt="first excemple website image" />
-            </div>
+        <section className={"flex flex-col justify-center items-center px-1 w-full md:-mt-56 gap-4 "+styles.container}>
+            <Image src={FirstImage} alt="first excemple website image" className="object-cover w-full md:object-contain md:w-3/4 xl:w-1/2" />
             <ButtonContacts>Начать сотрудничество</ButtonContacts>
         </section>
     )

@@ -2,6 +2,7 @@ import Image from 'next/image';
 import backgroundImage from '@/assets/philip-oroni-v0PnusRa6aM-unsplash 1.svg';
 import styles from './StartWindow.module.css';
 import { ScrollBottom } from '../ScrollBottom';
+
 /**
  * Renders the start window component.
  *
@@ -9,14 +10,14 @@ import { ScrollBottom } from '../ScrollBottom';
  */
 function StartWindow() {
   return (
-    <section className={styles.startWindow}>
+    <section className={"flex flex-col items-center justify-center text-center min-h-screen " + styles.startWindow}>
       <Image
-        className={styles.backgroundImage}
+        className="absolute left-0 top-0 -z-10 object-cover pointer-events-none h-full"
         src={backgroundImage}
         alt="Задний фон"
       />
-      <div className={styles.container}>
-        <h1>Почему Вам нужен веб-сайт — чтобы завоевать доверие к бренду</h1>
+      <div className="flex items-center flex-shrink-0 w-screen md:max-w-4xl">
+        <h1 className="text-4xl">Почему Вам нужен веб-сайт — чтобы завоевать доверие к бренду</h1>
       </div>
       <ScrollBottom />
     </section>

@@ -40,8 +40,8 @@ function ScrollBottom() {
             {showScroll && (
                 <div className={styles.scroll}>
                     <div className={styles.group}>
-                        <Image src={Outline} alt="" />
-                        <Image src={Innerline} alt="" />
+                        <Image src={Outline} alt="Scroll outline" />
+                        <Image src={Innerline} alt="Scroll innerline" />
                     </div>
                 </div>
             )}
