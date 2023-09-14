@@ -6,6 +6,7 @@ import {
   Support,
   AboutUs,
 } from '@/components';
+import React from 'react';
 
 export const metadata = {
   title: 'Home',
@@ -17,15 +18,15 @@ export const metadata = {
  *
  * @return {JSX.Element} The rendered Home component.
  */
-export default function Home() {
+export default function Home(): JSX.Element {
   return (
     <>
-      <StartWindow />
-      <FirstExcempleWebsite />
-      <Creativity />
-      <WorkCards />
-      <Support />
-      <AboutUs />
+      < StartWindow />
+      < FirstExcempleWebsite />
+      < Creativity />
+      < WorkCards />
+      < Support />
+      < AboutUs />
     </>
   );
 }

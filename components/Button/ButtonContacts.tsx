@@ -7,7 +7,7 @@ import { ButtonLink } from "."
  * @param {object} props - The properties for the button.
  * @returns {ReactNode} The rendered button component.
  */
-function ButtonContacts(props) {
+function ButtonContacts(props: any) {
     const { children, ...rest } = props;
     return (
         <ButtonLink href='#contacts' {...rest}>{children}</ButtonLink>

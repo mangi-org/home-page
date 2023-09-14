@@ -11,7 +11,7 @@ import { ScrollTop } from '@/components'
  * @param {ReactNode} props.children - The children elements.
  * @returns {ReactElement} The rendered component.
  */
-export default function Layout({ children }) {
+export default function Layout({ children }: { children: React.ReactNode }) {
     return (
         <div className='wrapper'>
             <Header />

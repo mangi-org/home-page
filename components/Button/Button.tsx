@@ -9,7 +9,7 @@ import styles from "./Button.module.css"
  * @param {ReactNode} props.children - The content of the button.
  * @return {ReactElement} The rendered button component.
  */
-function Button(props) {
+function Button(props: any) {
     return (
         <button className={styles.button} {...props}>{props.children}</button>
     )
@@ -23,7 +23,7 @@ function Button(props) {
  * @param {ReactNode} props.children - The content of the button.
  * @returns {ReactElement} - The rendered button link component.
  */
-function ButtonLink(props) {
+function ButtonLink(props: any) {
     return (
         <Link className={styles.button} href={props.href} {...props}>{props.children}</Link>
     )

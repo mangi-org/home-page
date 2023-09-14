@@ -1,7 +1,8 @@
 import Link from 'next/link'
 import styles from './Header.module.css'
 import Image from 'next/image'
-import Logo from '@/assets/mangi_logo.svg'
+import Logo from "@/assets/mangi_logo.svg"
+import React from 'react'
 
 const menuUrls = [
     {

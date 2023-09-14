@@ -3,10 +3,12 @@ import { useEffect, useRef } from "react";
 import gsap from "gsap";
 import styles from "./SupportLayerIcon.module.css";
 
-function SupportLayerIcon({ children }) {
-    const containerRef = useRef(null);
+function SupportLayerIcon({ children }: { children: React.ReactNode }) {
+    const containerRef = useRef<HTMLDivElement>(null);
 
     useEffect(() => {
+        if (!containerRef.current) return;
+
         const container = containerRef.current;
         const childrenElements = Array.from(container.children);
 

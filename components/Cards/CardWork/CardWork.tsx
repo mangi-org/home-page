@@ -1,6 +1,13 @@
 import Link from 'next/link'
 import styles from './CardWork.module.css'
-import Image from 'next/image';
+import Image, { StaticImageData } from 'next/image';
+
+interface CardWorkProps {
+    title: string;
+    link: string;
+    backgroundImage: string | StaticImageData;
+    backgroundImageAlt: string;
+}
 
 /**
  * Renders a card component for displaying work information.
@@ -12,7 +19,7 @@ import Image from 'next/image';
  * @param {string} props.backgroundImageAlt - The alt text for the background image.
  * @return {JSX.Element} The rendered card component.
  */
-function CardWork({ title, link, backgroundImage, backgroundImageAlt }) {
+function CardWork({ title, link, backgroundImage, backgroundImageAlt }: CardWorkProps) {
 
     let checkLink = true;
 

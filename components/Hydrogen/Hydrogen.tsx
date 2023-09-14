@@ -7,7 +7,7 @@ import styles from './Hydrogen.module.css'
  * @param {string} props.text - The text to be displayed in the component.
  * @return {JSX.Element} The rendered Hydrogen component.
  */
-function Hydrogen({ text }) {
+function Hydrogen({ text }: { text: string }) {
     return (
         <h2 className={styles.hydrogen} >{text}</h2>
     )

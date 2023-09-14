@@ -21,7 +21,7 @@ const robots = Roboto({
  * @param {Object} children - The children components to be rendered within the layout.
  * @return {JSX.Element} The JSX element representing the root layout.
  */
-export default function RootLayout({ children }) {
+export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang='ru'>
       <body className={'dark ' + robots.className}>

@@ -1,5 +1,5 @@
-import { SmootchEffect } from '@/components'
 import styles from './Footer.module.css'
+import React from 'react'
 /**
  * Renders the footer component.
  *
