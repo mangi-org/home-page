@@ -1,7 +1,7 @@
 import Image from "next/image"
 import styles from './FirstExcempleWebsite.module.css'
 import FirstImage from '@/assets/excemple_website.png'
-import { ButtonContacts } from "../Button"
+import { ButtonContacts } from "../../UI/intex"
 
 
 /**

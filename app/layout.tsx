@@ -1,6 +1,6 @@
 import Layout from '@/layout';
 import './globals.css';
-import { PWACompoent } from '@/components';
+import { PWACompoent } from '@/components/Sections/index';
 import { Roboto } from 'next/font/google';
 
 export const metadata = {

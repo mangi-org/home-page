@@ -1,5 +1,6 @@
 import Link from "next/link"
-import styles from "./Button.module.css"
+
+const buttonClassName = "bg-orange border-2 border-orange border-solid text-dark py-5 px-10 rounded-xl transition-all hover:bg-dark hover:text-orange"
 
 /**
  * Renders a button with the provided props.
@@ -11,7 +12,7 @@ import styles from "./Button.module.css"
  */
 function Button(props: any) {
     return (
-        <button className={styles.button} {...props}>{props.children}</button>
+        <button className={buttonClassName} {...props}>{props.children}</button>
     )
 }
 
@@ -25,8 +26,21 @@ function Button(props: any) {
  */
 function ButtonLink(props: any) {
     return (
-        <Link className={styles.button} href={props.href} {...props}>{props.children}</Link>
+        <Link className={buttonClassName} href={props.href} {...props}>{props.children}</Link>
     )
 }
 
-export { Button, ButtonLink }
+/**
+ * Renders a button component for contacts.
+ *
+ * @param {any} props - The properties for the button component.
+ * @return {JSX.Element} The rendered button component.
+ */
+function ButtonContacts(props: any) {
+    const { children, ...rest } = props;
+    return (
+        <ButtonLink href='#contacts' {...rest}>{children}</ButtonLink>
+    );
+}
+
+export { Button, ButtonLink, ButtonContacts }

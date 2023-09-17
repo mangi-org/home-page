@@ -1,11 +1,12 @@
-import Image from "next/image"
-import { GradientSpan } from "../GradientSpan"
-import { Hydrogen } from "../Hydrogen"
-import { Paragraph } from "../Paragraph"
-import Paralax from "../Paralax"
+import { GradientSpan, Hydrogen, Paralax, Paragraph } from "../../UI/intex"
 import styles from "./AboutUs.module.css"
 
 
+/**
+ * Renders the AboutUs component.
+ *
+ * @return {JSX.Element} The rendered AboutUs component.
+ */
 function AboutUs() {
     return (
         <section id="about" className={styles.section}>
@@ -16,7 +17,7 @@ function AboutUs() {
                 </Paragraph>
             </div>
             <Paralax />
-            
+
 
         </section>
     )

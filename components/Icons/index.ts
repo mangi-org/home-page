@@ -5,11 +5,22 @@ import { MailIcon } from './MailIcon';
 import { PhoneIcon } from './PhoneIcon';
 import { QuestionIcon } from './QuestionIcon';
 
-export {
-  MailIcon,
+const Icons = {
   VKIcon,
   TelegrammIcon,
   WhatsAppIcon,
+  MailIcon,
+  PhoneIcon,
+  QuestionIcon,
+}
+
+export default Icons;
+
+export {
+  VKIcon,
+  TelegrammIcon,
+  WhatsAppIcon,
+  MailIcon,
   PhoneIcon,
   QuestionIcon,
 };

@@ -1,10 +1,9 @@
 import Image from "next/image"
-import { Hydrogen } from "../Hydrogen"
-import { VKIcon, TelegrammIcon, WhatsAppIcon, MailIcon, PhoneIcon, QuestionIcon } from "../Icons"
+import { Hydrogen, Paragraph } from "../../UI/intex"
+import { VKIcon, TelegrammIcon, WhatsAppIcon, MailIcon, PhoneIcon, QuestionIcon } from "../../Icons/index"
 import { SupportLayerIcon } from "./SupportLayerIcon"
 import styles from "./Support.module.css"
 import BackgroundImage from "@/assets/unLinerOrangeVector.svg"
-import { Paragraph } from "../Paragraph"
 
 const text = "Можете связаться с нами и одновременно опробовав бота"
 

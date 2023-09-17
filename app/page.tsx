@@ -5,7 +5,7 @@ import {
   WorkCards,
   Support,
   AboutUs,
-} from '@/components';
+} from '@/components/Sections';
 import React from 'react';
 
 export const metadata = {

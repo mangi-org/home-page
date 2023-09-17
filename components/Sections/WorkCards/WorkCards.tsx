@@ -1,5 +1,4 @@
-import { CardWork } from "../Cards"
-import { Hydrogen } from "../Hydrogen"
+import { Hydrogen, CardWork } from "../../UI/intex"
 import styles from "./WorkCards.module.css"
 import CRMBackground from '@/assets/crm.png'
 import BotsBackground from '@/assets/bots.png'

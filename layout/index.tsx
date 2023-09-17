@@ -2,7 +2,7 @@ import React from 'react'
 import Header from './Header'
 import Footer from './Footer'
 import Main from './Main'
-import { ScrollTop } from '@/components'
+import { ScrollTop } from '@/components/UI/intex'
 
 /**
  * Render the layout component.
