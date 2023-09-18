@@ -28,15 +28,22 @@ function CardWork({ title, link, backgroundImage, backgroundImageAlt }: CardWork
     // }
 
     return (
-        <div className={styles.card}>
-            <div className={styles.bacground}>
-                <Image src={backgroundImage} alt={backgroundImageAlt} />
-                <span></span>
+        <div className="relative flex flex-col items-center h-full w-full p-0 m-0 md:w-2/3 lg:w-1/2">
+            <div className="bg-cover">
+                <Image className="rounded-2xl" src={backgroundImage} alt={backgroundImageAlt} />
+                {/* <span></span> */}
             </div>
-            <div className={styles.content}>
-                <h3 className={styles.title}>{title}</h3>
-                {checkLink && <Link href={link}>Примеры работ</Link>}
+            <div className="absolute flex items-left flex-wrap w-full justify-center p-2 flex-col pt-2 md:pt-4">
+                <h3 className="text-shadow w-fit">{title}</h3>
             </div>
+            {checkLink && 
+            <Link href={link} className="
+                absolute flex items-center justify-center p-1 flex-col bottom-2 border-solid border 
+                px-2 border-white rounded bg-white text-dark transition-all hover:backdrop-blur-sm 
+                hover:bg-inherit hover:text-white lg:px-4
+            "
+            >Примеры работ</Link>
+            }
         </div>
     );
 }

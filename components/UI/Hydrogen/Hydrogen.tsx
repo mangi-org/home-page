@@ -1,5 +1,3 @@
-import styles from './Hydrogen.module.css'
-
 /**
  * Render a Hydrogen component.
  *
@@ -9,7 +7,7 @@ import styles from './Hydrogen.module.css'
  */
 function Hydrogen({ text }: { text: string }) {
     return (
-        <h2 className={styles.hydrogen} >{text}</h2>
+        <h2 className="text-center font-bold text-4xl mb-4 md:mb-6 md:text-5xl lg:text-6xl lg:mb-8" >{text}</h2>
     )
 }
 

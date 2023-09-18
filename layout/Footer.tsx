@@ -1,4 +1,3 @@
-import styles from './Footer.module.css'
 import React from 'react'
 /**
  * Renders the footer component.
@@ -7,7 +6,7 @@ import React from 'react'
  */
 export default function Footer() {
     return (
-        <footer className={styles.footer}>
+        <footer className="flex mx-auto my-4 justify-center text-center self-center items-center">
             <p>
                 © {new Date().getFullYear()} Все права защищены
             </p>

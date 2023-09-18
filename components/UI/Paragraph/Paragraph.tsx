@@ -8,7 +8,7 @@ import styles from './Paragraph.module.css';
  */
 function Paragraph({ children }: { children: React.ReactNode }) {
     return (
-        <p className={styles.paragraph}>{children}</p>
+        <p className="text-base md:text-lg lg:text-xl">{children}</p>
     )
 }
 

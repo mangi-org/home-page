@@ -1,6 +1,6 @@
 import Link from "next/link"
 
-const buttonClassName = "bg-orange border-2 border-orange border-solid text-dark py-5 px-10 rounded-xl transition-all hover:bg-dark hover:text-orange"
+const buttonClassName = "bg-orange border-2 border-orange border-solid text-dark py-5 px-10 rounded-xl transition-all w-max hover:bg-dark hover:text-orange"
 
 /**
  * Renders a button with the provided props.

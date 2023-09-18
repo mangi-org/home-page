@@ -13,7 +13,7 @@ import { ScrollTop } from '@/components/UI/intex'
  */
 export default function Layout({ children }: { children: React.ReactNode }) {
     return (
-        <div className='wrapper'>
+        <div className="wrapper">
             <Header />
             <Main>
                 {children}
