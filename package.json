@@ -7,6 +7,7 @@
     "build": "tsc && next build",
     "prestart": "tsc && next build",
     "start": "tsc && next start",
+    "prod":  "npm run start",
     "lint": "tsc && next lint"
   },
   "dependencies": {
