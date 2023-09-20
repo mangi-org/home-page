@@ -1,4 +1,4 @@
-import styles from './Paragraph.module.css';
+// import styles from './Paragraph.module.css';
 
 /**
  * Render a paragraph component.
@@ -6,9 +6,9 @@ import styles from './Paragraph.module.css';
  * @param {React.ReactNode} children - The content of the paragraph.
  * @return {React.ReactElement} The rendered paragraph component.
  */
-function Paragraph({ children }: { children: React.ReactNode }) {
+function Paragraph(props: any) {
     return (
-        <p className="text-base md:text-lg lg:text-xl">{children}</p>
+        <p className={"text-base md:text-lg lg:text-xl " + props.className} {...props}>{props.children}</p>
     )
 }
 

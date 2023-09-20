@@ -38,10 +38,10 @@ function ScrollBottom() {
     return (
         <>
             {showScroll && (
-                <div className={styles.scroll}>
-                    <div className={styles.group}>
-                        <Image src={Outline} alt="Scroll outline" />
-                        <Image src={Innerline} alt="Scroll innerline" />
+                <div className="absolute bottom-8 z-10">
+                    <div className="relative flex flex-col justify-center items-center">
+                        <Image src={Outline} className="h-16" alt="Scroll outline" />
+                        <Image src={Innerline} className={"h-16 absolute top-2 " + styles.innerImg} alt="Scroll innerline" />
                     </div>
                 </div>
             )}

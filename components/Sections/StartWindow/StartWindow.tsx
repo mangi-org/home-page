@@ -12,7 +12,7 @@ function StartWindow() {
   return (
     <section className={"flex flex-col items-center justify-center text-center min-h-screen " + styles.startWindow}>
       <Image
-        className="absolute left-0 top-0 -z-10 object-cover pointer-events-none h-full"
+        className="absolute left-0 top-0 -z-10 object-cover pointer-events-none h-full w-full"
         src={backgroundImage}
         alt="Задний фон"
       />

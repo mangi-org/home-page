@@ -63,7 +63,7 @@
   :has(.menu + .mobile input[type='checkbox']:checked) > .menu {
     display: flex;
     flex-direction: column;
-    z-index: 2;
+    z-index: 9998;
     position: fixed;
     top: 0;
     left: 0;

@@ -1,7 +1,6 @@
 'use client';
 import { useEffect, useRef } from "react";
 import gsap from "gsap";
-import styles from "./SupportLayerIcon.module.css";
 
 function SupportLayerIcon({ children }: { children: React.ReactNode }) {
     const containerRef = useRef<HTMLDivElement>(null);
@@ -29,7 +28,7 @@ function SupportLayerIcon({ children }: { children: React.ReactNode }) {
     }, []);
 
     return (
-        <div ref={containerRef} className={styles.container}>
+        <div ref={containerRef} className="absolute left-0 top-0 z-10 w-full h-full">
             {children}
         </div>
     );

@@ -12,7 +12,7 @@ const buttonClassName = "bg-orange border-2 border-orange border-solid text-dark
  */
 function Button(props: any) {
     return (
-        <button className={buttonClassName} {...props}>{props.children}</button>
+        <button className={buttonClassName + " " + props.className} {...props}>{props.children}</button>
     )
 }
 
@@ -24,10 +24,9 @@ function Button(props: any) {
  * @param {ReactNode} props.children - The content of the button.
  * @returns {ReactElement} - The rendered button link component.
  */
-function ButtonLink(props: any) {
-    return (
-        <Link className={buttonClassName} href={props.href} {...props}>{props.children}</Link>
-    )
+function ButtonLink({ href, children, ...rest }: any) {
+    const className = `${buttonClassName} ${rest.className}`;
+    return <Link className={className} href={href} {...rest}>{children}</Link>;
 }
 
 /**

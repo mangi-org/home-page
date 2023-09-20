@@ -1,5 +1,4 @@
 import { Hydrogen, CardWork } from "../../UI/intex"
-import styles from "./WorkCards.module.css"
 import CRMBackground from '@/assets/crm.png'
 import BotsBackground from '@/assets/bots.png'
 import MobileBackground from '@/assets/mobile.png'
@@ -53,9 +52,9 @@ const itemsWorkCards = [
  */
 function WorkCards() {
     return (
-        <section id="work">
+        <section id="work" className="container mx-auto">
             <Hydrogen text="Работы" />
-            <div className={styles.works}>
+            <div className="grid grid-cols-2 px-1 gap-4 justify-center items-center justify-items-center md:grid-cols-3">
                 {itemsWorkCards.map((item, index) => (
                     <CardWork
                         key={index}
