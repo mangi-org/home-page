@@ -21,6 +21,8 @@ services:
       - ./frontend/.env
     ports:
       - "3000:3000"
+    volumes:
+      - ./frontend/public:/frontend/public
 
   backend:
     container_name: "django"
