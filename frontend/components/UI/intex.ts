@@ -5,6 +5,7 @@ import { Paragraph } from "./Paragraph";
 import { Hydrogen } from "./Hydrogen";
 import { ScrollBottom } from "./ScrollBottom";
 import { ScrollTop } from "./ScrollTop";
+import { Video } from "./Video";
 
 const UI = {
     Button,
@@ -15,7 +16,8 @@ const UI = {
     Paragraph,
     Hydrogen,
     ScrollBottom,
-    ScrollTop
+    ScrollTop,
+    Video,
 }
 
 export default UI;
@@ -29,5 +31,6 @@ export {
     Paragraph,
     Hydrogen,
     ScrollBottom,
-    ScrollTop
+    ScrollTop,
+    Video,
 };

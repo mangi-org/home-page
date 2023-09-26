@@ -1,0 +1,5 @@
+.video poster {
+    object-fit: cover;
+    object-position: center;
+    overflow: hidden;
+}

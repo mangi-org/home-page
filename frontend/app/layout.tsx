@@ -10,7 +10,7 @@ export const metadata = {
 
 const robots = Roboto({
   weight: ['300', '500', '700'],
-  style: ['normal', 'italic'],
+  style: ['normal'],
   subsets: ['latin'],
   display: 'swap',
 });

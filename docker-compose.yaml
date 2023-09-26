@@ -3,13 +3,19 @@ version: '3.9'
 services:
   nginx:
     container_name: nginx
-    image: nginx
+    image: macbre/nginx-http3
+    # image: nginx
     ports:
       - '80:80'
-      # - '443:443'
-      # - '443:443/udp'
+      - '443:443'
+      - '443:443/udp'
     volumes:
-      - ./nginx.conf:/etc/nginx/nginx.conf
+      - ./config/nginx.conf:/etc/nginx/nginx.conf
+      # - ./nginx.conf:/etc/nginx/conf.d/nginx.conf
+      # - ./nginx.conf:/etc/nginx/nginx.conf
+      - ./cert.d/certificate.crt:/etc/nginx/ssl/cert.crt
+      - ./cert.d/key.pem:/etc/nginx/ssl/key.pem
+      - ./cert.d/dhparam.pem:/etc/ssl/dhparam.pem
     depends_on:
       - frontend
       - backend

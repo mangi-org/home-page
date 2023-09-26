@@ -1,0 +1,2 @@
+openssl req -newkey rsa:2048 -nodes -keyout ./cert.d/key.pem -x509 -days 365 -out ./cert.d/certificate.crt -config ./config/openssl.cnf
+curl https://ssl-config.mozilla.org/ffdhe2048.txt -o ./cert.d/dhparam.pem

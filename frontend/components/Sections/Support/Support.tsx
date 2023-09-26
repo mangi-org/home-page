@@ -12,19 +12,23 @@ function Support() {
     const iconsBottom = [
         {
             compenent: <VKIcon className="w-full h-full" />,
-            link: '/'
+            link: '/',
+            label: 'VK'
         },
         {
             compenent: <TelegrammIcon className="w-full h-full" />,
-            link: '/'
+            link: '/',
+            label: 'Telegramm'
         },
         {
             compenent: <WhatsAppIcon className="w-full h-full" />,
-            link: ''
+            link: '',
+            label: 'WhatsApp'
         },
         {
             compenent: <MailIcon className="w-full h-full" />,
-            link: '/'
+            link: '/',
+            label: 'Email'
         },
     ]
 
@@ -41,7 +45,7 @@ function Support() {
                 <div className="flex flex-row gap-4 items-center justify-center mt-4">
                     {iconsBottom.map((item: any, index: number) => (
                         item.link !== '' ?
-                            <Link href={item.link} key={index} className={classNameIconsBottom}><i>{item.compenent}</i></Link> :
+                            <Link href={item.link} aria-label={"Ссылка на " + item.label} key={index} className={classNameIconsBottom}><i>{item.compenent}</i></Link> :
                             <i key={index} className={classNameIconsBottom}>{item.compenent}</i>
                     ))}
                 </div>

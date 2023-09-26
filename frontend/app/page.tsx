@@ -5,11 +5,12 @@ import {
   WorkCards,
   Support,
   AboutUs,
+  VideoSection
 } from '@/components/Sections';
 import React from 'react';
 
 export const metadata = {
-  title: 'Home',
+  title: 'Главная страница | Mangi.org',
   description: 'This is the main content of the application',
 };
 
@@ -27,6 +28,7 @@ export default function Home(): JSX.Element {
       < WorkCards />
       < Support />
       < AboutUs />
+      < VideoSection />
     </>
   );
 }

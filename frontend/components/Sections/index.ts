@@ -7,6 +7,7 @@ import { StartWindow } from "./StartWindow";
 import { Support } from "./Support";
 import { WorkCards } from "./WorkCards";
 import { Paralax } from "./Paralax";
+import { VideoSection } from "./VideoSection";
 
 const Sections = {
     AboutUs,
@@ -17,7 +18,8 @@ const Sections = {
     StartWindow,
     Support,
     WorkCards,
-    Paralax
+    Paralax,
+    VideoSection
 }
 
 export default Sections;
@@ -31,5 +33,6 @@ export {
     StartWindow,
     Support,
     WorkCards,
-    Paralax
+    Paralax,
+    VideoSection
 };
