@@ -8,6 +8,7 @@ import { Support } from "./Support";
 import { WorkCards } from "./WorkCards";
 import { Paralax } from "./Paralax";
 import { VideoSection } from "./VideoSection";
+import { WhyUsSection } from "./WhyUsSection";
 
 const Sections = {
     AboutUs,
@@ -19,7 +20,8 @@ const Sections = {
     Support,
     WorkCards,
     Paralax,
-    VideoSection
+    VideoSection,
+    WhyUsSection
 }
 
 export default Sections;
@@ -34,5 +36,6 @@ export {
     Support,
     WorkCards,
     Paralax,
-    VideoSection
+    VideoSection,
+    WhyUsSection
 };

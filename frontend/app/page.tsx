@@ -5,7 +5,8 @@ import {
   WorkCards,
   Support,
   AboutUs,
-  VideoSection
+  VideoSection,
+  WhyUsSection
 } from '@/components/Sections';
 import React from 'react';
 
@@ -29,6 +30,7 @@ export default function Home(): JSX.Element {
       < Support />
       < AboutUs />
       < VideoSection />
+      < WhyUsSection />
     </>
   );
 }

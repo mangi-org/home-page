@@ -1,5 +1,5 @@
 import { Button, ButtonLink, ButtonContacts } from "./Buttons";
-import { CardWork } from "./Cards";
+import { CardWork, CardGlass } from "./Cards";
 import { GradientSpan } from "./GradientSpan";
 import { Paragraph } from "./Paragraph";
 import { Hydrogen } from "./Hydrogen";
@@ -12,6 +12,7 @@ const UI = {
     ButtonLink,
     ButtonContacts,
     CardWork,
+    CardGlass,
     GradientSpan,
     Paragraph,
     Hydrogen,
@@ -27,6 +28,7 @@ export {
     ButtonLink,
     ButtonContacts,
     CardWork,
+    CardGlass,
     GradientSpan,
     Paragraph,
     Hydrogen,
