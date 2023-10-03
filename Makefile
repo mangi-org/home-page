@@ -4,3 +4,6 @@ docker-local: docker-compose-build
 docker-compose-build:
 	docker-compose down
 	docker-compose build
+
+sertificate:
+	.\shell\sertificate.bat
