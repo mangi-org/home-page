@@ -9,6 +9,7 @@ import { WorkCards } from "./WorkCards";
 import { Paralax } from "./Paralax";
 import { VideoSection } from "./VideoSection";
 import { WhyUsSection } from "./WhyUsSection";
+import { FAQSections } from "./FAQSections";
 
 const Sections = {
     AboutUs,
@@ -21,7 +22,8 @@ const Sections = {
     WorkCards,
     Paralax,
     VideoSection,
-    WhyUsSection
+    WhyUsSection,
+    FAQSections
 }
 
 export default Sections;
@@ -37,5 +39,6 @@ export {
     WorkCards,
     Paralax,
     VideoSection,
-    WhyUsSection
+    WhyUsSection,
+    FAQSections
 };

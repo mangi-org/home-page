@@ -34,23 +34,23 @@ const ItemsWhy: ItemsWhyInterface[] = [
 function WhyUsSection() {
 
     return (
-        <section id="why" className="relative">
+        <section id="why" className="relative my-4">
             <div className="container mx-auto">
                 <Hydrogen text="Почему мы?" />
                 <Paragraph className="text-center">
                     Глубоко <GradientSpan >погружаемся</GradientSpan> во все этапы разработки
                 </Paragraph>
-                <div className="grid grid-cols-2 grid-flow-row gap-4 p-1">
+                <div className="grid grid-cols-2 grid-flow-row gap-4 p-1 md:p-12 lg:grid-cols-4">
                     {ItemsWhy.map((item, index) => (
-                        <CardGlass key={index} className="p-2">
+                        <CardGlass key={index} className="p-3">
                             <span>{index + 1 < 10 ? '0' + (index + 1) : index}</span>
-                            <h3>{item.title}</h3>
-                            <Paragraph>{item.description}</Paragraph>
+                            <h3 className="font-bold text-lg my-2 md:text-xl lg:text-2xl">{item.title}</h3>
+                            <Paragraph className="text-sm">{item.description}</Paragraph>
                         </CardGlass>
                     ))}
                 </div>
             </div>
-            <Image src={VectorBGImage} className="object-contain w-full h-full -z-10 absolute top-0 left-0" alt="Vector" />
+            <Image src={VectorBGImage} className="object-contain w-full h-full -z-10 absolute top-0 left-0 md:object-fill lg:object-contain lg:-left-96" alt="Vector" />
         </section>
     )
 }

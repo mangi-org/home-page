@@ -6,7 +6,8 @@ import {
   Support,
   AboutUs,
   VideoSection,
-  WhyUsSection
+  WhyUsSection,
+  FAQSections
 } from '@/components/Sections';
 import React from 'react';
 
@@ -31,6 +32,7 @@ export default function Home(): JSX.Element {
       < AboutUs />
       < VideoSection />
       < WhyUsSection />
+      < FAQSections />
     </>
   );
 }

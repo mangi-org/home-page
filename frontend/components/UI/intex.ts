@@ -6,6 +6,7 @@ import { Hydrogen } from "./Hydrogen";
 import { ScrollBottom } from "./ScrollBottom";
 import { ScrollTop } from "./ScrollTop";
 import { Video } from "./Video";
+import { Accordions } from "./Accordions";
 
 const UI = {
     Button,
@@ -19,6 +20,7 @@ const UI = {
     ScrollBottom,
     ScrollTop,
     Video,
+    Accordions
 }
 
 export default UI;
@@ -35,4 +37,5 @@ export {
     ScrollBottom,
     ScrollTop,
     Video,
+    Accordions
 };
