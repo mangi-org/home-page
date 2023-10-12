@@ -1,4 +1,4 @@
-import { Hydrogen, CardWork } from "../../UI/intex"
+import { Hydrogen, CardWork } from "@/components/UI"
 import CRMBackground from '@/assets/crm.png'
 import BotsBackground from '@/assets/bots.png'
 import MobileBackground from '@/assets/mobile.png'

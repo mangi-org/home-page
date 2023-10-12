@@ -1,6 +1,6 @@
 import Image from "next/image"
-import { CardGlass, Hydrogen, Paragraph } from "../../UI/intex"
-import { VKIcon, TelegrammIcon, WhatsAppIcon, MailIcon } from "../../Icons/index"
+import { CardGlass, Hydrogen, Paragraph } from "@/components/UI"
+import { VKIcon, TelegrammIcon, WhatsAppIcon, MailIcon } from "@/components/Icons"
 import BackgroundImage from "@/assets/unLinerOrangeVector.svg"
 import Link from "next/link"
 

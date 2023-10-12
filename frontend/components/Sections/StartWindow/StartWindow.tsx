@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import { ScrollBottom } from '../../UI/intex';
+import { ScrollBottom } from '@/components/UI';
 import backgroundImage from '@/assets/philip-oroni-v0PnusRa6aM-unsplash 1.png';
 import styles from './StartWindow.module.css';
 

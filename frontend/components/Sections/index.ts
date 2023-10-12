@@ -10,6 +10,8 @@ import { Paralax } from "./Paralax";
 import { VideoSection } from "./VideoSection";
 import { WhyUsSection } from "./WhyUsSection";
 import { FAQSections } from "./FAQSections";
+import { PartnersSection } from "./PartnersSection";
+import { ContactFormSections } from "./ContactFormSections";
 
 const Sections = {
     AboutUs,
@@ -23,7 +25,9 @@ const Sections = {
     Paralax,
     VideoSection,
     WhyUsSection,
-    FAQSections
+    FAQSections,
+    PartnersSection,
+    ContactFormSections
 }
 
 export default Sections;
@@ -40,5 +44,7 @@ export {
     Paralax,
     VideoSection,
     WhyUsSection,
-    FAQSections
+    FAQSections,
+    PartnersSection,
+    ContactFormSections
 };

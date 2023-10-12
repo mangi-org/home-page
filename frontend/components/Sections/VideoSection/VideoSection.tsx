@@ -1,5 +1,4 @@
-import { Hydrogen } from "@/components/UI/Hydrogen"
-import { Video } from "@/components/UI/intex";
+import { Hydrogen, Video } from "@/components/UI";
 import imageBackgound from "@/assets/videoBackground.png"
 import Image from "next/image";
 

@@ -1,4 +1,4 @@
-import { Hydrogen, GradientSpan, Paragraph, CardGlass } from "@/components/UI/intex";
+import { Hydrogen, GradientSpan, Paragraph, CardGlass } from "@/components/UI";
 import VectorBGImage from "@/assets/Vector.png"
 import Image from "next/image";
 

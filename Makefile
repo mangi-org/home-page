@@ -1,4 +1,4 @@
-docker-local: docker-compose-build
+docker-local: docker-compose-build sertificate
 	docker-compose up -d
 
 docker-compose-build:

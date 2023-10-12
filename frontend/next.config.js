@@ -1,11 +1,14 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  reactStrictMode: true,
+  // reactStrictMode: true,
   swcMinify: true,
-  experimental: {
-    appDir: true,
+  images: {
+    domains: ['localhost', 'mangi.org'],
+  },
+  // experimental: {
+    // appDir: true,
     // serverActions: true
-  }
+  // },
 };
 
 module.exports = nextConfig;

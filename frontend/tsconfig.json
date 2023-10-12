@@ -1,12 +1,7 @@
 {
   "compilerOptions": {
     "target": "es2016",
-    "lib": [
-      "es2022",
-      "dom",
-      "dom.iterable",
-      "esnext"
-    ],
+    "lib": ["es2022", "dom", "dom.iterable", "esnext"],
     "allowJs": true,
     "skipLibCheck": true,
     "strict": true,
@@ -25,9 +20,7 @@
       }
     ],
     "paths": {
-      "@/*": [
-        "./*"
-      ]
+      "@/*": ["./*"]
     },
     "forceConsistentCasingInFileNames": true
   },
@@ -37,8 +30,6 @@
     "**/*.tsx",
     ".next/types/**/*.ts",
     "app/page.tsj"
-  ],
-  "exclude": [
-    "node_modules"
-  ]
+, "jest.config.js"  ],
+  "exclude": ["node_modules"]
 }

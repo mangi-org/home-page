@@ -10,9 +10,11 @@ const buttonClassName = "bg-orange border-2 border-orange border-solid text-dark
  * @param {ReactNode} props.children - The content of the button.
  * @return {ReactElement} The rendered button component.
  */
-function Button(props: any) {
+function Button({children, className, ...rest}: any) {
+    let resultClassName = buttonClassName
+    resultClassName += className !== undefined ? " " + className : ""   
     return (
-        <button className={buttonClassName + " " + props.className} {...props}>{props.children}</button>
+        <button className={resultClassName} {...rest}>{children}</button>
     )
 }
 

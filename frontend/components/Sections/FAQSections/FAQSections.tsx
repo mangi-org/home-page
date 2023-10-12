@@ -1,4 +1,4 @@
-import { Accordions, Hydrogen, Paragraph, CardGlass } from "@/components/UI/intex"
+import { Accordions, Hydrogen, Paragraph, CardGlass } from "@/components/UI"
 
 interface ItemsFAQInterface {
     title: string;
@@ -7,20 +7,20 @@ interface ItemsFAQInterface {
 
 const listFAQ: ItemsFAQInterface[] = [
     {
-        title: "Текс текст",
-        description: "Officia culpa sint eu consequat aliquip exercitation esse id amet veniam velit tempor fugiat exercitation."
+        title: "Что лучше: сайт или мобильное приложение?",
+        description: "Выбор между веб-сайтом и мобильным приложением зависит от ваших бизнес-целей и целевой аудитории. Веб-сайты обеспечивают широкий охват и доступность, поскольку они доступны через браузер на любом устройстве. Мобильные приложения могут предложить более глубокую интеграцию с устройством и улучшенный пользовательский опыт. В mangi.org мы помогаем вам анализировать вашу целевую аудиторию и бизнес-цели, чтобы определить, что будет наилучшим решением для вашего конкретного случая."
     },
     {
-        title: "Текс текст",
-        description: "Officia culpa sint eu consequat aliquip exercitation esse id amet veniam velit tempor fugiat exercitation."
+        title: "С какими сферами бизнеса вы работаете?",
+        description: "В mangi.org мы имеем опыт работы с различными сферами бизнеса, включая, но не ограничиваясь, коммерческим парсингом, разработкой B2B-сервисов, таких как CRM-системы, созданием интернет-магазинов, а также разработкой мобильных и веб-приложений. Наша команда специалистов готова поддержать вас на каждом этапе вашего проекта, независимо от того, в какой отрасли вы работаете."
     },
     {
-        title: "Текс текст",
-        description: "Officia culpa sint eu consequat aliquip exercitation esse id amet veniam velit tempor fugiat exercitation."
+        title: "От чего зависит стоимость разработки продукта?",
+        description: "Стоимость разработки продукта в mangi.org рассчитывается, исходя из количества трудочасов, затраченных на проект, умноженных на количество людей в команде, плюс наша маржа. Мы учитываем различные факторы, такие как сложность проекта, требуемые технологии и ресурсы, чтобы предоставить вам конкурентоспособное и честное предложение. Наша цель - предоставить вам высококачественные решения, которые приносят реальную ценность вашему бизнесу."
     },
     {
-        title: "Текс текст",
-        description: "Officia culpa sint eu consequat aliquip exercitation esse id amet veniam velit tempor fugiat exercitation."
+        title: "Как сайт поможет моему бизнесу?",
+        description: "Веб-сайт является цифровым лицом вашего бизнеса и может служить мощным инструментом для привлечения и обслуживания клиентов. Он улучшает видимость вашего бизнеса, предоставляя информацию о вашей компании, продуктах и услугах 24/7. Кроме того, сайт может служить платформой для онлайн-продаж, обеспечивая дополнительный канал дохода. В mangi.org мы разрабатываем сайты, которые не только выглядят привлекательно, но и оптимизированы для конверсий, чтобы помочь вам достичь ваших бизнес-целей."
     }
 ]
 
@@ -33,15 +33,14 @@ function FAQSections() {
     return (
         <section className="relative container mx-auto px-1">
             <Hydrogen text="Часто задаваемые вопросы" />
-            <div className="flex flex-col gap-4">
+            <div className="flex flex-col gap-4 mx-auto md:w-4/5 lg:w-3/4 xl:w-2/3">
                 {listFAQ.map((item, index) => (
                     <CardGlass className="p-4" key={index}>
-                        <Accordions.Details open={index === 0}>
-                            <Accordions.Summory>{item.title}</Accordions.Summory>
-                            <Paragraph>
+                        <Accordions text={item.title} open={index === 0}>
+                            <Paragraph className="mt-4 indent-4 text-justify">
                                 {item.description}
                             </Paragraph>
-                        </Accordions.Details>
+                        </Accordions>
                     </CardGlass>
                 ))}
             </div>

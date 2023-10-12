@@ -1,4 +1,4 @@
-import { GradientSpan, Hydrogen, Paragraph } from "../../UI/intex"
+import { GradientSpan, Hydrogen, Paragraph } from "@/components/UI"
 import { Paralax } from "../Paralax"
 
 /**

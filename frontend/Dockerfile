@@ -8,7 +8,7 @@ WORKDIR /frontend
 COPY package*.json ./
 
 # Install project dependencies
-RUN npm install
+RUN npm install --only=production
 
 # Copy the rest of the project files to the container
 COPY . .
@@ -20,6 +20,6 @@ RUN npm run build
 EXPOSE 3000
 
 # Start the app
-CMD [ "npm", "run", "prod" ]
+CMD [ "npm", "run", "start" ]
 
 VOLUME ./public

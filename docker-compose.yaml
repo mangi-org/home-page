@@ -25,6 +25,8 @@ services:
     build: ./frontend
     env_file:
       - ./frontend/.env
+    environment:
+      - NEXT_PUBLIC_DOCKER=1
     ports:
       - "3000:3000"
     volumes:
