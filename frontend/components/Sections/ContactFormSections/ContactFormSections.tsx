@@ -1,14 +1,13 @@
-import { Button, CardGlass, Hydrogen, Paragraph } from "@/components/UI";
+import { CardGlass, Hydrogen, Paragraph } from "@/components/UI";
 import Image from "next/image";
 import MangiLogo from "@/assets/mangi_attr.png";
-import axios from "@/axios";
 import Form from "./Form";
 
 const email = "info@mangi.org";
 
 function ContactFormSections() {
     return (
-        <section className="relative p-1">
+        <section id="contacts" className="relative p-1">
             <CardGlass className="container mx-auto p-3">
                 <Hydrogen text="Обратная связь" />
                 <div className="flex flex-col md:flex-row gap-4">

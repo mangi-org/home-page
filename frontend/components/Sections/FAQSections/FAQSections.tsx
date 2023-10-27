@@ -31,7 +31,7 @@ const listFAQ: ItemsFAQInterface[] = [
  */
 function FAQSections() {
     return (
-        <section className="relative container mx-auto px-1">
+        <section id="bots" className="relative container mx-auto px-1">
             <Hydrogen text="Часто задаваемые вопросы" />
             <div className="flex flex-col gap-4 mx-auto md:w-4/5 lg:w-3/4 xl:w-2/3">
                 {listFAQ.map((item, index) => (

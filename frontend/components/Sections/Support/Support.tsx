@@ -27,7 +27,7 @@ function Support() {
         },
         {
             compenent: <MailIcon className="w-full h-full" />,
-            link: '/',
+            link: 'mailto:info@mangi.org',
             label: 'Email'
         },
     ]
@@ -35,7 +35,7 @@ function Support() {
     const classNameIconsBottom = "w-12 h-12 bg-orange rounded-full fill-white p-3 transition-all hover:bg-white hover:fill-orange cursor-pointer"
 
     return (
-        <section id="contacts" className="w-full mx-auto relative flex my-8 md:px-4 md:py-12">
+        <section id="bots" className="w-full mx-auto relative flex my-8 md:px-4 md:py-12">
             <div className="absolute w-1/2 right-0 bottom-0 -z-10 md:w-1/4 lg:w-1/6">
                 <Image src={BackgroundImage} alt="background image support" />
             </div>
@@ -46,7 +46,7 @@ function Support() {
                 <div className="flex flex-row gap-4 items-center justify-center mt-4">
                     {iconsBottom.map((item: any, index: number) => (
                         item.link !== '' ?
-                            <Link href={item.link} aria-label={"Ссылка на " + item.label} key={index} className={classNameIconsBottom}><i>{item.compenent}</i></Link> :
+                            <a href={item.link} aria-label={"Ссылка на " + item.label} key={index} className={classNameIconsBottom}><i>{item.compenent}</i></a> :
                             <i key={index} className={classNameIconsBottom}>{item.compenent}</i>
                     ))}
                 </div>

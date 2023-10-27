@@ -18,17 +18,17 @@ const menuUrls = [
         url: '/#why'
     },
     {
-        name: 'Оставить заявку',
-        url: '/#email'
-    },
-    {
         name: 'FAQ',
         url: '/#faq'
     },
     {
         name: 'Контакты',
+        url: '/#bots'
+    },
+    {
+        name: 'Оставить заявку',
         url: '/#contacts'
-    }
+    },
 ]
 
 /**
